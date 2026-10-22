@@ -1,6 +1,6 @@
 # Source inventory
 
-이 파일은 실제로 포함된 파일의 SHA-256 및 출처 기록입니다.
+이 파일은 소스 스냅샷의 출처 기록입니다. GitHub에 올린 Pure Pursuit 본체만 ZIP과 다른 이전 버전이므로 위 표에서 별도 표시했습니다.
 
 | Repository path | Source / caveat | Bytes | SHA-256 |
 |---|---|---:|---|
@@ -14,7 +14,7 @@
 | `purepursuit_mgeo/scripts/roundabout_merge_gate_node.py` | Earlier user-verified V8 support script (not necessarily current on team PC) | 11231 | `149505d6b920c497c46bbb4294bde46227e3d0a254c9d4fbd2cc2c676e8c7d03` |
 | `purepursuit_mgeo/scripts/trajectory_safety.py` | Earlier user-verified V8 support script (not necessarily current on team PC) | 12922 | `2639ea9334c0760883857995cfb476bb7614b4e7706db593249b7a9db0b6b7a7` |
 | `purepursuit_mgeo/scripts/highway_lane_strategy_node.py` | Exact user-supplied V9 smooth/rollback highway strategy | 115019 | `38456e6320ac6aaa6d1ca43d1e4277d2018cb858f0ed94db90f2949befc1a0b2` |
-| `purepursuit_mgeo/scripts/purepursuit_mgeo_node.py` | Preview lookahead patch from conversation; on-PC version not independently confirmed | 24640 | `76943941416d1d60b60de590cc6b4cd70df871631fc5dddfd0e4a61e51fe6c4e` |
+| `purepursuit_mgeo/scripts/purepursuit_mgeo_node.py` | Archived user-uploaded sensor-team controller; **not** the 24KB INNER_HOLD preview source in the downloadable ZIP. Verify before running. | 17199 | `6a6ba114b72155a64c42fd2e87cddbb2757ecfdfeadde825519bc984d3da89b3` |
 | `purepursuit_mgeo/src/purepursuit_mgeo/path.py` | V8 local path-loading library | 4554 | `5045f30683ecc9715f19022146338e3d6a5b76904a506b7c983148857180f43a` |
 | `purepursuit_mgeo/src/purepursuit_mgeo/__init__.py` | V8 local path-loading library | 39 | `517a20ebf19efe5f931aaff08009eec200312e0a79d36bdf2aa6dfbe4921a084` |
 | `purepursuit_mgeo/launch/morai_avoidance_highway_roundabout_final.launch` | Previously supplied launch snapshot; may differ from actual current PC | 17707 | `e6b0e55fff5e19443b034b77b2ad68b6225d5dd945dc0640b70434800fc3329c` |
