@@ -5,7 +5,7 @@
 `purepursuit_mgeo/` 아래 ROS Noetic 제어 패키지에서 사용하는 **확보된 코드 파일**과 launch 스냅샷을 모았습니다.
 
 - `scripts/highway_lane_strategy_node.py`: 2026-10-22 사용자가 직접 선택하여 업로드한 **잘 작동했던 V9 코드와 바이트 단위로 동일**합니다. (이전 smooth-lanehold/continuity-rollback 소스와 SHA-256 일치)
-- `scripts/purepursuit_mgeo_node.py`: 대화 중 사용한 **INNER_HOLD Lookahead preview 패치**입니다. 실제 팀 PC에서 마지막으로 사용 중인 버전과 **완전히 일치하는지는 확인되지 않았습니다**.
+- `scripts/purepursuit_mgeo_node.py`: **이전 대화에서 사용한 센서팀 Pure Pursuit 17KB 버전**을 업로드했습니다. 별도로 준비한 [대화 첨부 ZIP]의 Lookahead preview 24KB 버전과 다릅니다. 실제 팀 PC에서 사용 중인 버전과 비교 후 필요하면 교체하세요.
 - 다른 `scripts/*.py`와 `src/purepursuit_mgeo`: 사용자가 이전에 검증한 V8 지원 코드 묶음에서 가져왔습니다. 실제 팀 PC에서 바뀐 부분이 있다면 비교 후 선택하세요.
 - `launch/`: 이전에 공유된 final, diagnostic_test, frenet_avoidance_debug launch 스냅샷입니다. 최근 주행 중 임의 변경한 모든 인자 값이 반영된 상태라는 보장은 없습니다.
 
@@ -50,3 +50,6 @@ roslaunch purepursuit_mgeo morai_avoidance_highway_roundabout_diagnostic_test.la
 새 빈 **Private** 저장소를 만든 뒤 `main`에는 프로젝트 설명을 두고, 개발 코드 파일은 `team-handoff` 브랜치에 게시하는 것을 권장합니다. 기존 작업 저장소는 수정할 필요가 없습니다.
 
 `GITHUB_UPLOAD_GUIDE.md` 참조.
+
+
+> **GitHub 업로드 주의:** 이 브랜치의 Pure Pursuit 파일은 이전 17KB 소스이며, 원래 handoff ZIP에 담긴 24KB preview 패치와 동일하지 않습니다. `SOURCE_MANIFEST.md`의 초기 SHA-256 목록은 ZIP 스냅샷 기준이므로, GitHub 게시본의 `purepursuit_mgeo_node.py`에는 그대로 적용되지 않습니다.
