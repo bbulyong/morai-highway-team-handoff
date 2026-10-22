@@ -1,0 +1,32 @@
+# ROS / Python
+__pycache__/
+*.py[cod]
+build/
+devel/
+install/
+logs/
+log/
+.catkin_tools/
+.vscode/
+.idea/
+# Runtime datasets, models and generated captures
+*.bag
+*.db3
+*.pt
+*.pth
+*.onnx
+*.weights
+*.avi
+*.mp4
+*.npy
+*.npz
+*.pcd
+*.ply
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*credentials*
+*token*
